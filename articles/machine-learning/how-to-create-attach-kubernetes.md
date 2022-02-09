@@ -116,7 +116,7 @@ KubernetesVersion    Upgrades
 To find the default version that is used when **creating** a cluster through Azure Machine Learning, you can use the `--query` parameter to select the default version:
 
 ```azurecli-interactive
-az aks get-versions -l westus --query "orchestrators[?default == `true`].orchestratorVersion" -o table
+az aks get-versions -l westus --query "orchestrators[?default == true].orchestratorVersion" -o table
 ```
 
 The output of this command is similar to the following text:
